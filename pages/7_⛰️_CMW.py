@@ -40,7 +40,7 @@ with st.expander("See source code"):
             spin=False,
             add_legend=True,
         )
-        m.add_raster("./data/landcover.tif", colormap="terrain", layer_name="Landcover")
+        m.add_raster("https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/landcover.tif", colormap="terrain", layer_name="Landcover")
         #m.add_legend()
         #m.split_map(
         #    left_layer="ESA WorldCover 2020 S2 FCC", right_layer="ESA WorldCover 2020"
