@@ -3,3 +3,6 @@ geopandas
 leafmap
 owslib
 streamlit
+xarray
+rasterio
+localtileserver
