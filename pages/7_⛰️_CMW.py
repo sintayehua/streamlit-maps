@@ -5,13 +5,13 @@ import leafmap.foliumap as leafmap
 st.set_page_config(layout="wide")
 
 markdown = """
-A Streamlit map template
-<https://github.com/opengeos/streamlit-map-template>
+CMW datasets
+<https://www.dmu.edu.et>
 """
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAU.png"
+logo = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/dmu.png"
 st.sidebar.image(logo)
 
 st.title("Choke Mountain Watersheds")
