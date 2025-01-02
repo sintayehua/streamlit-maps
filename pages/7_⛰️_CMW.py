@@ -14,7 +14,7 @@ st.sidebar.info(markdown)
 logo = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/dmu.png"
 st.sidebar.image(logo)
 
-markdown = """
+markdown2 = """
 Hydraulic and Water Resources Engineering Department
 
 (c) 2025 Sintayehu Adefires Abebe
