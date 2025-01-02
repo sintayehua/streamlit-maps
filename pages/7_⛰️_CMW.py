@@ -17,7 +17,7 @@ st.sidebar.image(logo)
 markdown2 = """
 Hydraulic and Water Resources Engineering Department
 
-(c) 2025 Sintayehu Adefires Abebe
+© 2025 Sintayehu Adefires Abebe
 """
 st.sidebar.info(markdown2)
 
