@@ -1,6 +1,6 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
-import xarray as xr
+#import xarray as xr
 
 st.set_page_config(layout="wide")
 
@@ -22,6 +22,7 @@ with st.expander("See source code"):
         boundary = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/cmw_max_boundary.geojson"
         climate = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/nma_stations.csv"
         flow = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/flow_stations.csv"
+        landcover = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/landcover.tif"
         m.add_geojson(boundary, layer_name="CMW boundary")
         m.add_points_from_xy(
             climate,
@@ -41,7 +42,7 @@ with st.expander("See source code"):
             spin=False,
             add_legend=True,
         )
-        m.add_raster("https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/landcover.tif", colormap="terrain", layer_name="Landcover")
+        m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         #m.add_legend()
         #m.split_map(
         #    left_layer="ESA WorldCover 2020 S2 FCC", right_layer="ESA WorldCover 2020"
