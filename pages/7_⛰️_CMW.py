@@ -20,10 +20,11 @@ with st.expander("See source code"):
     with st.echo():
         m = leafmap.Map()
         boundary = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/cmw_max_boundary.geojson"
-        climate = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/nma_stations.csv"
-        flow = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/flow_stations.csv"
+        #climate = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/nma_stations.csv"
+        #flow = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/flow_stations.csv"
         landcover = "https://raw.githubusercontent.com/sintayehua/streamlit-maps/main/data/landcover.tif"
         m.add_geojson(boundary, layer_name="CMW boundary")
+        '''
         m.add_points_from_xy(
             climate,
             x="long",
@@ -42,6 +43,7 @@ with st.expander("See source code"):
             spin=False,
             add_legend=True,
         )
+        '''
         m.add_raster(landcover, colormap="terrain", layer_name="Landcover")
         #m.add_legend()
         #m.split_map(
