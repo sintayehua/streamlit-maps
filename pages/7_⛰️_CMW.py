@@ -19,6 +19,7 @@ Hydraulic and Water Resources Engineering Department
 
 (c) 2025 Sintayehu Adefires Abebe
 """
+st.sidebar.info(markdown2)
 
 st.title("Choke Mountain Watersheds")
 
