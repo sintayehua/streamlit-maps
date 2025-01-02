@@ -18,9 +18,9 @@ st.title("Split-panel Map")
 with st.expander("See source code"):
     with st.echo():
         m = leafmap.Map()
-        boundary = "./data/cmw_max_boundary.geojson"
-        climate = "./data/nma_stations.csv"
-        flow = "./data/flow_stations.csv"
+        boundary = "https://github.com/sintayehua/streamlit-maps/blob/main/data/cmw_max_boundary.geojson"
+        climate = "https://github.com/sintayehua/streamlit-maps/blob/main/data/nma_stations.csv"
+        flow = "https://github.com/sintayehua/streamlit-maps/blob/main/data/flow_stations.csv"
         m.add_geojson(boundary, layer_name="CMW boundary")
         m.add_points_from_xy(
             climate,
